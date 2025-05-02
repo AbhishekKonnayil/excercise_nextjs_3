@@ -40,7 +40,7 @@ export async function DELETE(
   const movieId = +id;
   const index = movies.findIndex((m) => m.id == movieId);
 
-  if (index==-1) {
+  if (index == -1) {
     return new Response("Movie not found");
   }
   movies.splice(index, 1);
